@@ -145,7 +145,8 @@ def inpaint_mode_change(mode, inpaint_engine_version):
 
 reload_javascript()
 
-title = f'Fooocus {fooocus_version.version}'
+title = "DpImageX"
+shared.gradio_root = gr.Blocks(title=title).queue()
 
 if isinstance(args_manager.args.preset, str):
     title += ' ' + args_manager.args.preset
